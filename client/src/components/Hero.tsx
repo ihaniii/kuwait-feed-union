@@ -40,7 +40,7 @@ export default function Hero() {
               className="text-[var(--color-gold-light)] text-sm font-medium"
               style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
             >
-              {isAr ? "شركة الطريق" : "The Road Company"}
+              {isAr ? "الاتحاد الكويتي لتجارة الأعلاف" : "Kuwait Feed Trade Union"}
             </span>
           </div>
 

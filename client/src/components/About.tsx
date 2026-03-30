@@ -39,7 +39,7 @@ export default function About() {
                   className="text-sm font-bold text-[var(--color-gold)]"
                   style={{ fontFamily: isAr ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}
                 >
-                  {isAr ? "شركة الطريق" : "The Road Company"}
+                  {isAr ? "الاتحاد الكويتي لتجارة الأعلاف" : "Kuwait Feed Trade Union"}
                 </p>
               </div>
             </div>
