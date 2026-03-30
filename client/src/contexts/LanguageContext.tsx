@@ -21,12 +21,12 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Hero
   "hero.title": {
-    en: "Kuwait Feed Trade Union",
-    ar: "الاتحاد الكويتي لتجارة الأعلاف",
+    en: "Kuwaiti Union for Feed Dealers",
+    ar: "الاتحاد الكويتي لتجار الأعلاف",
   },
   "hero.subtitle": {
-    en: "Organizing the feed sector in the State of Kuwait",
-    ar: "تنظيم قطاع الأعلاف في دولة الكويت",
+    en: "Suppliers - Producers - Manufacturers - Brokers | Organizing the feed sector in the State of Kuwait",
+    ar: "موردين - منتجين - مصنعين - دلالين | تنظيم قطاع الأعلاف في دولة الكويت",
   },
   "hero.cta": { en: "Learn More", ar: "اعرف المزيد" },
   "hero.cta2": { en: "Join Us", ar: "انضم إلينا" },
@@ -38,10 +38,10 @@ const translations: Record<string, Record<Language, string>> = {
     ar: "من نحن",
   },
   "about.text": {
-    en: "The Kuwait Feed Trade Union was established to organize the feed sector in the State of Kuwait, represent its members before official authorities, and contribute to the development of this vital sector in support of food security and the national economy.",
-    ar: "تأسس الاتحاد الكويتي لتجارة الأعلاف بهدف تنظيم قطاع الأعلاف في دولة الكويت، وتمثيل أعضائه أمام الجهات الرسمية، والعمل على تطوير هذا القطاع الحيوي بما يخدم الأمن الغذائي والاقتصاد الوطني.",
+    en: "The Kuwaiti Union for Feed Dealers was established to organize the feed sector in the State of Kuwait, represent its members — suppliers, producers, manufacturers, and brokers — before official authorities, and contribute to the development of this vital sector in support of food security and the national economy.",
+    ar: "تأسس الاتحاد الكويتي لتجار الأعلاف بهدف تنظيم قطاع الأعلاف في دولة الكويت، وتمثيل أعضائه من موردين ومنتجين ومصنعين ودلالين أمام الجهات الرسمية، والعمل على تطوير هذا القطاع الحيوي بما يخدم الأمن الغذائي والاقتصاد الوطني.",
   },
-  "about.company": { en: "Kuwait Feed Trade Union", ar: "الاتحاد الكويتي لتجارة الأعلاف" },
+  "about.company": { en: "Kuwaiti Union for Feed Dealers", ar: "الاتحاد الكويتي لتجار الأعلاف" },
 
   // Vision
   "vision.label": { en: "Our Vision", ar: "رؤيتنا" },
@@ -116,8 +116,8 @@ const translations: Record<string, Record<Language, string>> = {
   "membership.label": { en: "Join Our Union", ar: "انضم إلى اتحادنا" },
   "membership.title": { en: "Membership", ar: "العضوية" },
   "membership.text": {
-    en: "The union offers membership for traders and suppliers to benefit from its services and contribute to sector development.",
-    ar: "يتيح الاتحاد الانضمام للتجار والموردين للاستفادة من خدماته والمشاركة في تطوير القطاع.",
+    en: "The union offers membership for feed dealers including suppliers, producers, manufacturers, and brokers to benefit from its services and contribute to sector development.",
+    ar: "يتيح الاتحاد الانضمام لتجار الأعلاف من موردين ومنتجين ومصنعين ودلالين للاستفادة من خدماته والمشاركة في تطوير القطاع.",
   },
   "membership.benefit1": { en: "Official Representation", ar: "التمثيل الرسمي" },
   "membership.benefit1.desc": {

@@ -1,9 +1,11 @@
 /*
  * Gulf Elegance Design — Footer
  * Navy background with gold accents
- * Elegant, minimal footer with navigation and copyright
+ * Elegant footer with logo, navigation and copyright
  */
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663071042274/DinC845nzABEPMcko7yJf5/logo-enhanced_3a6d91ac.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
@@ -34,20 +36,23 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-[var(--color-gold)]/20 flex items-center justify-center">
-                <span
-                  className="text-[var(--color-gold)] font-bold text-lg"
-                  style={{ fontFamily: isAr ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}
-                >
-                  {isAr ? "ا" : "K"}
-                </span>
-              </div>
+              <img
+                src={LOGO_URL}
+                alt={isAr ? "شعار الاتحاد" : "Union Logo"}
+                className="w-14 h-14 object-contain rounded-full bg-white/10 p-1 ring-1 ring-[var(--color-gold)]/20"
+              />
               <div>
                 <p
                   className="font-bold text-white text-sm"
                   style={{ fontFamily: isAr ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}
                 >
-                  {isAr ? "الاتحاد الكويتي لتجارة الأعلاف" : "Kuwait Feed Trade Union"}
+                  {isAr ? "الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers"}
+                </p>
+                <p
+                  className="text-[var(--color-gold)]/70 text-xs mt-0.5"
+                  style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+                >
+                  {isAr ? "موردين - منتجين - مصنعين - دلالين" : "Suppliers - Producers - Manufacturers - Brokers"}
                 </p>
               </div>
             </div>
@@ -106,14 +111,14 @@ export default function Footer() {
             style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
           >
             &copy; {new Date().getFullYear()}{" "}
-            {isAr ? "الاتحاد الكويتي لتجارة الأعلاف" : "Kuwait Feed Trade Union"}.{" "}
+            {isAr ? "الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers"}.{" "}
             {t("footer.rights")}.
           </p>
           <p
             className="text-white/30 text-xs"
             style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
           >
-            {isAr ? "الاتحاد الكويتي لتجارة الأعلاف" : "Kuwait Feed Trade Union"}
+            {isAr ? "موردين - منتجين - مصنعين - دلالين" : "Suppliers - Producers - Manufacturers - Brokers"}
           </p>
         </div>
       </div>

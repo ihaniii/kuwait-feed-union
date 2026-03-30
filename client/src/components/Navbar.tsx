@@ -2,10 +2,13 @@
  * Gulf Elegance Design — Navbar
  * Frosted glass sticky nav, gold accent underlines, smooth language toggle
  * Navy (#0A1628) + Gold (#C8A45C) palette
+ * Logo: Enhanced union seal with transparent background
  */
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Menu, X, Globe } from "lucide-react";
+
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663071042274/DinC845nzABEPMcko7yJf5/logo-enhanced_3a6d91ac.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
@@ -20,6 +23,7 @@ export default function Navbar() {
   const { lang, t, toggleLanguage } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const isAr = lang === "ar";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -47,25 +51,29 @@ export default function Navbar() {
         {/* Logo / Brand */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2"
+          className="flex items-center gap-3"
         >
-          <div className="w-10 h-10 rounded-lg bg-[var(--color-navy)] flex items-center justify-center">
-            <span className="text-[var(--color-gold)] font-bold text-lg" style={{ fontFamily: lang === "ar" ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}>
-              {lang === "ar" ? "ا" : "K"}
-            </span>
-          </div>
+          <img
+            src={LOGO_URL}
+            alt={isAr ? "شعار الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers Logo"}
+            className={`h-12 md:h-14 w-12 md:w-14 object-contain rounded-full transition-all duration-300 ${
+              scrolled
+                ? "bg-white/90 shadow-md shadow-[var(--color-navy)]/10 p-0.5"
+                : "bg-white/20 backdrop-blur-sm p-0.5 ring-1 ring-white/20"
+            }`}
+          />
           <div className="hidden sm:block">
             <p
               className={`text-sm font-bold leading-tight ${scrolled ? "text-[var(--color-navy)]" : "text-white"}`}
-              style={{ fontFamily: lang === "ar" ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}
+              style={{ fontFamily: isAr ? "var(--font-heading-ar)" : "var(--font-heading-en)" }}
             >
-              {lang === "ar" ? "الاتحاد الكويتي" : "Kuwait Feed"}
+              {isAr ? "الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers"}
             </p>
             <p
-              className={`text-xs leading-tight ${scrolled ? "text-[var(--color-navy)]/70" : "text-white/70"}`}
-              style={{ fontFamily: lang === "ar" ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+              className={`text-[10px] leading-tight mt-0.5 ${scrolled ? "text-[var(--color-gold-dark)]" : "text-[var(--color-gold-light)]"}`}
+              style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
             >
-              {lang === "ar" ? "لتجارة الأعلاف" : "Trade Union"}
+              {isAr ? "موردين - منتجين - مصنعين - دلالين" : "Suppliers - Producers - Manufacturers - Brokers"}
             </p>
           </div>
         </button>
@@ -79,7 +87,7 @@ export default function Navbar() {
               className={`relative px-3 py-2 text-sm font-medium transition-colors duration-300 group ${
                 scrolled ? "text-[var(--color-navy)]/80 hover:text-[var(--color-navy)]" : "text-white/80 hover:text-white"
               }`}
-              style={{ fontFamily: lang === "ar" ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+              style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
             >
               {t(item.key)}
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[var(--color-gold)] transition-all duration-300 group-hover:w-3/4" />
@@ -96,7 +104,7 @@ export default function Navbar() {
                 ? "border-[var(--color-gold)]/30 text-[var(--color-navy)] hover:bg-[var(--color-gold)]/10"
                 : "border-white/30 text-white hover:bg-white/10"
             }`}
-            style={{ fontFamily: lang === "ar" ? "var(--font-body-en)" : "var(--font-body-ar)" }}
+            style={{ fontFamily: isAr ? "var(--font-body-en)" : "var(--font-body-ar)" }}
           >
             <Globe className="w-3.5 h-3.5" />
             {t("lang.switch")}
@@ -125,7 +133,7 @@ export default function Navbar() {
               key={item.key}
               onClick={() => handleNavClick(item.href)}
               className="block w-full text-start px-4 py-3 text-[var(--color-navy)] hover:bg-[var(--color-gold)]/10 rounded-lg transition-colors text-sm font-medium"
-              style={{ fontFamily: lang === "ar" ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+              style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
             >
               {t(item.key)}
             </button>
