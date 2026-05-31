@@ -4,6 +4,7 @@
  * Elegant footer with logo, navigation and copyright
  */
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Instagram } from "lucide-react";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/sKhmSSPVkZDzvtmw.png";
 
@@ -99,6 +100,16 @@ export default function Footer() {
               <p style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}>
                 {t("contact.address.value")}
               </p>
+              <a
+                href="https://www.instagram.com/kftu.kw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/60 hover:text-[var(--color-gold)] transition-colors duration-300 mt-3"
+                style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+              >
+                <Instagram className="w-4 h-4" />
+                <span>@kftu.kw</span>
+              </a>
             </div>
           </div>
         </div>
@@ -113,12 +124,15 @@ export default function Footer() {
             {isAr ? "الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers"}.{" "}
             {t("footer.rights")}.
           </p>
-          <p
-            className="text-white/30 text-xs"
-            style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
+          <a
+            href="https://www.instagram.com/kftu.kw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white/30 hover:text-[var(--color-gold)] transition-colors duration-300 text-xs"
           >
-            {isAr ? "موردين - منتجين - مصنعين - دلالين" : "Suppliers - Producers - Manufacturers - Brokers"}
-          </p>
+            <Instagram className="w-3.5 h-3.5" />
+            <span>@kftu.kw</span>
+          </a>
         </div>
       </div>
     </footer>

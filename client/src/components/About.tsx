@@ -81,7 +81,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               {[
-                { num: isAr ? "٢٠٢٥" : "2025", label: isAr ? "سنة التأسيس" : "Established" },
+                { num: isAr ? "٢٠١٤" : "2014", label: isAr ? "سنة التأسيس" : "Established" },
                 { num: isAr ? "الكويت" : "Kuwait", label: isAr ? "المقر الرئيسي" : "Headquarters" },
                 { num: isAr ? "٥" : "5", label: isAr ? "خدمات رئيسية" : "Core Services" },
               ].map((stat, i) => (

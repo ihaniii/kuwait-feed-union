@@ -5,7 +5,7 @@
  */
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 
 export default function Contact() {
   const { lang, t } = useLanguage();
@@ -24,6 +24,12 @@ export default function Contact() {
       label: t("contact.address"),
       value: t("contact.address.value"),
       href: "#",
+    },
+    {
+      icon: Instagram,
+      label: isAr ? "إنستغرام" : "Instagram",
+      value: "@kftu.kw",
+      href: "https://www.instagram.com/kftu.kw",
     },
   ];
 
@@ -55,7 +61,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {contactItems.map((item, i) => {
             const Icon = item.icon;
             return (
