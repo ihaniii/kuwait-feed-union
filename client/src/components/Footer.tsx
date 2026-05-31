@@ -5,7 +5,7 @@
  */
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const LOGO_URL = "/manus-storage/oklogo_1a8900ac.png";
+const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/sKhmSSPVkZDzvtmw.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
