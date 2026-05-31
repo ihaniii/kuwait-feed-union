@@ -8,7 +8,7 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
 
 function Router() {
-  const base = import.meta.env.PROD ? "/kuwait-feed-union" : "";
+  const base = ""; // Custom domain q80ufd.com - no sub-path needed
   return (
     <WouterRouter base={base}>
       <Switch>

@@ -200,8 +200,8 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
-  // Use repo name as base for GitHub Pages deployment
-  base: process.env.NODE_ENV === "production" ? "/kuwait-feed-union/" : "/",
+  // Use / as base since custom domain q80ufd.com is used (no sub-path needed)
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
