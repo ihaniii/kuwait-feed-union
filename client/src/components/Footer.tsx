@@ -6,7 +6,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Instagram } from "lucide-react";
 
-const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/PtxVPHQxcHMTPkrT.png";
+const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/sKhmSSPVkZDzvtmw.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
