@@ -5,7 +5,7 @@
  */
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663071042274/DinC845nzABEPMcko7yJf5/logo-enhanced_3a6d91ac.png";
+const LOGO_URL = "/manus-storage/oklogo_1a8900ac.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
