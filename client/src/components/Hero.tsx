@@ -2,13 +2,12 @@
  * Gulf Elegance Design — Hero Section
  * Full-width panoramic hero with overlay content card
  * Deep navy overlay with gold accents, parallax-ready
- * Features the enhanced union logo and full name with categories
+ * Clean banner without logo/badge — those remain in navbar only
  */
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ChevronDown } from "lucide-react";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663071042274/DinC845nzABEPMcko7yJf5/hero-bg-96bqCNhM5EZTCQpd482sPu.webp";
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663071042274/DinC845nzABEPMcko7yJf5/logo-enhanced_3a6d91ac.png";
 
 export default function Hero() {
   const { lang, t } = useLanguage();
@@ -32,33 +31,12 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container pt-24 pb-16">
         <div className={`max-w-4xl ${isAr ? "mr-0 ml-auto text-end" : "ml-0 mr-auto text-start"}`}>
-          {/* Logo + Badge */}
-          <div
-            className={`flex items-center gap-4 mb-10 animate-fade-in ${isAr ? "flex-row-reverse justify-end" : ""}`}
-            style={{ animationDelay: "0.2s", animationFillMode: "both" }}
-          >
-            <img
-              src={LOGO_URL}
-              alt={isAr ? "شعار الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers Logo"}
-              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain rounded-full bg-white/15 backdrop-blur-sm p-1.5 ring-2 ring-[var(--color-gold)]/30 shadow-xl shadow-black/20"
-            />
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[var(--color-gold)]/30 bg-[var(--color-gold)]/10">
-              <div className="w-2 h-2 rounded-full bg-[var(--color-gold)] animate-pulse" />
-              <span
-                className="text-[var(--color-gold-light)] text-sm font-medium"
-                style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}
-              >
-                {isAr ? "موردين - منتجين - مصنعين - دلالين" : "Suppliers - Producers - Manufacturers - Brokers"}
-              </span>
-            </div>
-          </div>
-
           {/* Main Title */}
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 animate-fade-in-up"
             style={{
               fontFamily: isAr ? "var(--font-heading-ar)" : "var(--font-heading-en)",
-              animationDelay: "0.4s",
+              animationDelay: "0.3s",
               animationFillMode: "both",
             }}
           >
@@ -68,7 +46,7 @@ export default function Hero() {
           {/* Gold accent line */}
           <div
             className={`w-24 h-1 bg-[var(--color-gold)] mb-8 animate-fade-in ${isAr ? "ml-auto" : ""}`}
-            style={{ animationDelay: "0.6s", animationFillMode: "both" }}
+            style={{ animationDelay: "0.5s", animationFillMode: "both" }}
           />
 
           {/* Subtitle */}
