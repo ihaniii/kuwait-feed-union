@@ -56,11 +56,7 @@ export default function Navbar() {
           <img
             src={LOGO_URL}
             alt={isAr ? "شعار الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers Logo"}
-            className={`h-12 md:h-14 w-12 md:w-14 object-contain rounded-full transition-all duration-300 ${
-              scrolled
-                ? "bg-white/90 shadow-md shadow-[var(--color-navy)]/10 p-0.5"
-                : "bg-white/20 backdrop-blur-sm p-0.5 ring-1 ring-white/20"
-            }`}
+            className="h-12 md:h-14 w-12 md:w-14 object-contain transition-all duration-300"
           />
           <div className="hidden sm:block">
             <p

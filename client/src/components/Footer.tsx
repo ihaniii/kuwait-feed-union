@@ -40,7 +40,7 @@ export default function Footer() {
               <img
                 src={LOGO_URL}
                 alt={isAr ? "شعار الاتحاد" : "Union Logo"}
-                className="w-14 h-14 object-contain rounded-full bg-white/10 p-1 ring-1 ring-[var(--color-gold)]/20"
+                className="w-14 h-14 object-contain"
               />
               <div>
                 <p
