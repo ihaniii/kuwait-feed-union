@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Menu, X, Globe } from "lucide-react";
 
-const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/sKhmSSPVkZDzvtmw.png";
+const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663071042274/PtxVPHQxcHMTPkrT.png";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
