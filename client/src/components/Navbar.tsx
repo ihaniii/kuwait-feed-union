@@ -47,7 +47,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-20 md:h-24">
+      <div className="container flex items-center justify-between h-28 md:h-32">
         {/* Logo / Brand */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -56,7 +56,7 @@ export default function Navbar() {
           <img
             src={LOGO_URL}
             alt={isAr ? "شعار الاتحاد الكويتي لتجار الأعلاف" : "Kuwaiti Union for Feed Dealers Logo"}
-            className="h-[67px] md:h-[78px] w-[67px] md:w-[78px] object-contain transition-all duration-300"
+            className="h-[100px] md:h-[117px] w-[100px] md:w-[117px] object-contain transition-all duration-300 rounded-full ring-2 ring-white/60"
           />
           <div className="hidden sm:block">
             <p
