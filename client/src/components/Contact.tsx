@@ -16,8 +16,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: t("contact.email"),
-      value: "info@ku.com",
-      href: "mailto:info@ku.com",
+      value: "kuwaitufd@gmail.com",
+      href: "mailto:kuwaitufd@gmail.com",
     },
     {
       icon: Phone,

@@ -95,7 +95,7 @@ export default function Footer() {
               {t("contact.title")}
             </h4>
             <div className="space-y-2 text-sm text-white/60">
-              <p dir="ltr" className={isAr ? "text-end" : "text-start"}>info@ku.com</p>
+              <p dir="ltr" className={isAr ? "text-end" : "text-start"}>kuwaitufd@gmail.com</p>
               <p dir="ltr" className={isAr ? "text-end" : "text-start"}>+965 XXX XXXX</p>
               <p style={{ fontFamily: isAr ? "var(--font-body-ar)" : "var(--font-body-en)" }}>
                 {t("contact.address.value")}
